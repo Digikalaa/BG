@@ -1,0 +1,9 @@
+FROM python:3.8
+
+WORKDIR /app
+
+COPY . .
+
+RUN pip install -r requirements-Linux.txt
+
+CMD ["python", "01-01-collective-loop-log-up2-address-up3-up4.py"]
